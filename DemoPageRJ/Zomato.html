@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        
+        .main{
+            box-shadow: 0 0 10px rgb(223, 225, 223);
+            border-radius: 25px;
+        }
+        img{
+            width: 450px;
+            height: 200px;
+        }
+        h1{
+           text-align: left 10px;
+           text-align: left;
+           font-family: Okra, Helvetica, sans-serif;
+        }
+        p{
+            font-weight: 50px;
+            font-family: Okra, Helvetica, sans-serif;
+        }
+        
+        
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+    function CreateUI(props){
+        return(
+            <div class="main" >
+                <img src={props.url} width="70" height="70" />
+                <h1>{props.title}</h1>
+                <p>{props.content}</p>
+            </div>
+
+        );
+    }
+
+    function App(){
+        const containerStyle ={
+            display:"flex",
+            justifyContent :"space-evenly",
+           
+        };
+        return(
+            <div style = {containerStyle}>
+                
+                <CreateUI 
+                url="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+                title="Order Online"
+                content="Stay home and order to your doorstep"
+                />
+
+                <CreateUI
+                url="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+                title="Dining"
+                content="View the citys favourite dining venues"
+                />
+
+                <CreateUI
+                url="https://b.zmtcdn.com/webFrontend/d9d80ef91cb552e3fdfadb3d4f4379761647365057.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+                title="Nightlife And Club "
+                content="Explore the citys top nightlife outlets"
+                />
+             
+            </div>
+
+        );
+    }
+    ReactDOM.render(<App />, document.getElementById("root"));
+</script>
+  </body>
+</html>

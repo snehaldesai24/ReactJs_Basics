@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Home.css" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function CreateCard(props) {
+        // props = {title:"",imageUrl:""}
+        return (
+          <div class="card">
+            <img src={props.imageUrl} width="100%" height="250" />
+            <h3> {props.title} </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button>Profile Details </button>
+          </div>
+        );
+      }
+
+      function Header() {
+        return (
+          <div class="header">
+            <div class="leftPanel flexContainer">
+              <h1>First-Page-In-React</h1>
+            </div>
+            <div class="rightPanel flexContainer">
+              <a href="">Home </a>
+              <a href="">Profile </a>
+              <a href="">Products </a>
+              <a href="">ContactUs </a>
+              <a href="">Login </a>
+            </div>
+          </div>
+        );
+      }
+
+      function Main() {
+        return (
+          <div class="main cardContainer">
+            <CreateCard
+              title="Raj Verma"
+              imageUrl="https://thumbs.dreamstime.com/b/portrait-handsome-smiling-young-man-folded-arms-smiling-joyful-cheerful-men-crossed-hands-isolated-studio-shot-172869765.jpg"
+            />
+
+            <CreateCard
+              title="Aishwariya Sharma"
+              imageUrl="https://i.pinimg.com/originals/e6/78/4b/e6784b9cd722d02e014d7e60ebe25e39.jpg"
+            />
+
+            <CreateCard
+              title="Rohan Jaiswal"
+              imageUrl="https://th.bing.com/th/id/OIP.kLuVl7_2soHqjgecM56X2AHaLL?rs=1&pid=ImgDetMain"
+            />
+
+            <CreateCard
+              title="Preeti Reddy"
+              imageUrl="https://i.pinimg.com/originals/3e/37/a1/3e37a1bd45c70cb972bf95105ba4adc6.jpg"
+            />
+          </div>
+        );
+      }
+
+      function Footer() {
+        return (
+          <div class="footer">
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul><li><a href="">Home</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">our Team</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2024; Designed by <span class="designer">Dev</span></p>
+    </div>
+</div>
+        );
+      }
+
+      function App() {
+        return (
+          <div>
+            <Header />
+            <Main />
+            <Footer />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

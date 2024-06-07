@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  background-color: blanchedalmond;
+  border: 5px solid rgb(245, 74, 74);
+}
+
+.App h2{
+  color: blue;
+}
+
+.App p{
+  color: green;
+}
