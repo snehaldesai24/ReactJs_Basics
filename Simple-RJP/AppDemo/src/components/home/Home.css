@@ -1,0 +1,15 @@
+.home{
+    margin: 50px;
+    padding: 50px;
+    box-shadow: 0 0 10px brown;
+    color: white;
+}
+.home h2{
+    color: rgb(10, 199, 123);
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.home p{
+    color: rgb(245, 135, 229);
+}

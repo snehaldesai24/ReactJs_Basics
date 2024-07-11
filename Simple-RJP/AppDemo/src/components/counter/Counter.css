@@ -1,0 +1,21 @@
+.counter{
+    width: 500px;
+    box-shadow: 0 0 10px blue;
+    margin: 50px auto;
+    padding: 30px;
+}
+.counter h2{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(228, 10, 192);
+}
+.counter p{
+    font-size: 25px;
+    color: blueviolet;
+    font-weight: bold;
+    font-style: italic;
+}
+.counter button{
+    background-color: rgb(246, 248, 180);
+    margin: 10px;
+}

@@ -1,0 +1,20 @@
+parent-child relationship :
+
+A
+|
+B
+|
+C
+
+c-A=>c is a indirect child of A so we can not pass the data directly to the c 
+so thats why we can pass data like a to b then b to c format 
+
+A
+|
+B
+|
+C
+|
+D
+|
+E

@@ -1,0 +1,9 @@
+.container{
+    padding: 20px;
+}
+.container h2{
+    margin-bottom: 20px;
+}
+.container button{
+    margin-right: 10px;
+}
